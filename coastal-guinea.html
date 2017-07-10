@@ -133,7 +133,7 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 
 								<div class="fh5co-spacer fh5co-spacer-sm"></div>
 
-								<div class="row fh5co-feature-1">
+								<div id="trip-details" class="row fh5co-feature-1">
 
 									<div class="col-md-12 col-sm-12 fh5co-feature-blurb">
 										<h3>Trip details and itinerary</h3>
@@ -171,43 +171,43 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 													<p class="fh5co-feature-blurb-description">Transportation to/from and accommodations in the luscious tropical island off the coast of Guinea</p>
 											</li>
 										</ul>
-									</div>
-								</div>
 
-								<div class="row">
-									<div class="col-md-12">
-										<h3>Tentative itinerary</h3>
-										<p>Day 1: Arrive in Guinea!</p>
-										<p>Days 1-5: stay in Conakry</p>
-										<p>Days 5-7: Visit Kindia!</p>
-										<p>Days 7-13: Stay in Conakry</p>
-										<p>Days 13-16: Visit Roume!</p>
-										<p>Days 16-21: Stay in Conakry</p>
-										<p>Day 21: Depart Conakry</p>
-									</div>
-								</div>
+										<div class="row">
+											<div class="col-md-12">
+												<h3>Tentative itinerary</h3>
+												<p>Day 1: Arrive in Guinea!</p>
+												<p>Days 1-5: stay in Conakry</p>
+												<p>Days 5-7: Visit Kindia!</p>
+												<p>Days 7-13: Stay in Conakry</p>
+												<p>Days 13-16: Visit Roume!</p>
+												<p>Days 16-21: Stay in Conakry</p>
+												<p>Day 21: Depart Conakry</p>
+											</div>
+										</div>
 
-								<div class="row">
-									<div class="col-md-12">
-										<h3>Sample daily schedule</h3>
-										<p>8:00-9:00am: Breakfast</p>
-										<p>9:00-11:00am: Dance/Drum Class*</p>
-										<p>10:30-12noon: Music/Song Class</p>
-										<p>12noon-1:00pm: Lunch</p>
-										<p>1:00-3:30pm: Free Time</p>
-										<p>3:30-5:00pm: Drum class*</p>
-										<p>5:30-7:00pm: Dance class*</p>
-										<p>7:00-8:00pm: Dinner</p>
-										<p>8:00-???: Free Time/Performances/Language Classes...etc.</p>
-										<br>
-										<p>*NOTES: Students focused on drumming can replace the morning dance class with a drum class, and are encouraged to drum for the afternoon dance class.</p>
-										<p>We always offer separate dance & drum classes for Beginning & Intermediate and Advanced levels, so you can get the most value from your level specific dance and drum classes.</p>
+										<div class="row">
+											<div class="col-md-12">
+												<h3>Sample daily schedule</h3>
+												<p>8:00-9:00am: Breakfast</p>
+												<p>9:00-11:00am: Dance/Drum Class*</p>
+												<p>10:30-12noon: Music/Song Class</p>
+												<p>12noon-1:00pm: Lunch</p>
+												<p>1:00-3:30pm: Free Time</p>
+												<p>3:30-5:00pm: Drum class*</p>
+												<p>5:30-7:00pm: Dance class*</p>
+												<p>7:00-8:00pm: Dinner</p>
+												<p>8:00-???: Free Time/Performances/Language Classes...etc.</p>
+												<br>
+												<p>*NOTES: Students focused on drumming can replace the morning dance class with a drum class, and are encouraged to drum for the afternoon dance class.</p>
+												<p>We always offer separate dance & drum classes for Beginning & Intermediate and Advanced levels, so you can get the most value from your level specific dance and drum classes.</p>
+											</div>
+										</div>
 									</div>
 								</div>
 
 								<div class="fh5co-spacer fh5co-spacer-lg"></div>
 
-								<div class="row">
+								<div id="travel-requirements" class="row">
 									<div class="col-md-12">
 										<h3>Travel Requirements for Guinea, West Africa</h3>
 										<img src="images/guinea_map.jpg" alt="Images" class="fh5co-align-right img-responsive">
@@ -247,16 +247,14 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 
 							</div>
 
-
-
 							<div class="col-md-3  col-md-offset-1" id="fh5co-sidebar">
 								<div class="fh5co-side-section fh5co-nav-links">
 									<h2 class="fh5co-uppercase-heading-sm">Explore this trip</h2>
 									<ul>
-										<li><a href="#">Trip details and itinerary</a></li>
-										<li><a href="#">Travel requirements</a></li>
-										<li><a href="#">Imagine your first day in Guinea</a></li>
-										<li><a href="#">Download brochure</a></li>
+										<li><a href="#trip-details">Trip details and itinerary</a></li>
+										<li><a href="#travel-requirements">Travel requirements</a></li>
+										<li><a href="#imagine">Imagine your first day in Guinea</a></li>
+										<li><a href="#download-brochure">Download brochure</a></li>
 									</ul>
 								</div>
 
@@ -307,7 +305,7 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 							</div>
 						</div>
 
-						<div class="row">
+						<div id="imagine" class="row">
 							<div class="col-md-12">
 								<h3>Imagine your first day in Guinea</h3>
 								<p>... you wake up to the distant sacred call to prayer, chickens clucking and a warm breeze across your face.</p>
@@ -332,7 +330,7 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 
 						<br>
 
-						<div class="row">
+						<div id="download-brochure" class="row">
 							<div class="col-md-12">
 								<a href="#" class="btn btn-outline btn-lg">Download Brochure PDF</a>
 							</div>
@@ -416,6 +414,11 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 		        x.style.display = 'none';
 		    }
 			}
+
+			window.addEventListener("hashchange", function () {
+					console.log("poop")
+			    window.scrollTo(window.scrollX, window.scrollY - 100);
+			});
 
 		</script>
 
