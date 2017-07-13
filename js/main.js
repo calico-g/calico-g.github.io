@@ -139,6 +139,13 @@
 				$('#fh5co-header-section').removeClass('fh5co-scrolled');
 			}
 
+			if ( $(window).scrollTop() > 523 ) {
+				$('#secondary-nav').addClass('fixed');
+				console.log( $(window).scrollTop() )
+			} else {
+				$('#secondary-nav').removeClass('fixed');
+			}
+
 
 			// Parallax
 			$('.fh5co-hero-intro').css({

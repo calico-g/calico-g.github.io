@@ -245,6 +245,49 @@ textarea {
   }
 }
 
+/*Secondary Nav bar*/
+@media screen and (max-width: 993px) {
+  #secondary-nav {
+    display: none;
+  }
+}
+
+#secondary-nav {
+  background-color: white;
+  width: 100%;
+  float: none;
+  margin-bottom: 25px;
+  margin-top: -50px;
+  border-bottom: #ddd solid 1px;
+}
+
+#secondary-nav .flex-menu {
+  display: flex;
+  justify-content: center;
+}
+
+#secondary-nav ul {
+  float: none;
+}
+
+#secondary-nav a {
+  color: orange;
+}
+
+#secondary-nav.fixed {
+  background-color: #f5f5f5;
+  position: fixed;
+  top: 78px;
+  z-index: 2;
+  margin: 0;
+}
+
+.secondary-nav-header h2 {
+  text-align: center;
+  margin: 0;
+  padding-top: 11px;
+}
+
 /* Superfish Override Menu */
 .sf-menu {
   margin: 0 !important;
@@ -695,10 +738,10 @@ body.inner-page #fh5co-main {
 #fh5co-hero,
 #fh5co-main,
 #fh5co-logo-mobile-wrap {
-  -moz-transform: translateX(0px);
+/*  -moz-transform: translateX(0px);
   -webkit-transform: translateX(0px);
   -ms-transform: translateX(0px);
-  transform: translateX(0px);
+  transform: translateX(0px);*/
 }
 
 body.fh5co-mobile-menu-visible #fh5co-hero,
