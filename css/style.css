@@ -635,6 +635,17 @@ textarea {
   z-index: 5;
   color: #ffffff;
 }
+#fh5co-hero::before {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
   #fh5co-hero {
     background-position: center center;
