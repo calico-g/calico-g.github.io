@@ -305,7 +305,7 @@ textarea {
 }
 
 .sf-menu a {
-  color: rgba(255, 255, 255, 0.4);
+  color: #333;
   padding: .75em 1em;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -338,7 +338,7 @@ textarea {
 .sf-menu ul li:hover a,
 .sf-menu ul li.sfHover a,
 .sf-menu li.active a {
-  color: #ffffff;
+  color: #333;
 }
 
 .sf-menu ul li:hover,
@@ -633,10 +633,10 @@ textarea {
   left: 0;
   right: 0;
   z-index: 5;
-  color: #ffffff;
+  color: #333;
 }
 #fh5co-hero::before {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  background:rgba(255,255,255,0.6);
   content: "";
   display: block;
   height: 100%;
@@ -681,7 +681,7 @@ textarea {
   text-transform: uppercase;
   padding-bottom: 20px;
   position: relative;
-  color: #fff;
+  color: #333;
 }
 @media screen and (max-width: 768px) {
   #fh5co-hero .fh5co-hero-wrap .fh5co-hero-intro > h2 {
@@ -692,7 +692,7 @@ textarea {
   position: absolute;
   bottom: 0;
   display: block;
-  background: rgba(255, 255, 255, 0.4);
+  background: #333;
   width: 50px;
   height: 3px;
   left: 50%;
