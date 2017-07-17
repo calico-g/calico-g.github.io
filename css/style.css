@@ -1184,7 +1184,7 @@ Components
 }
 
 #fh5co-testimonial {
-  padding: 10em 0;
+  padding: 7em 0;
   background: #000 url(../images/hero2.jpg) no-repeat center center;
   background-size: cover;
 }
@@ -1199,8 +1199,8 @@ Components
   margin: 0 auto;
   color: #ffffff;
   border-left: none;
-  font-size: 45px;
-  line-height: 57px;
+  font-size: 20px;
+  line-height: 2;
 }
 @media screen and (max-width: 768px) {
   #fh5co-testimonial blockquote {
