@@ -163,12 +163,6 @@ textarea {
   font-size: 25px;
   line-height: 52px;
 }
-@media screen and (max-width: 768px) {
-  .fh5co-lead {
-    font-size: 30px;
-    line-height: 42px;
-  }
-}
 
 @media screen and (max-width: 480px) {
   .col-xxs-12 {
@@ -910,8 +904,15 @@ Components
 }
 
 .btn-primary {
-  background: #d24805;
+  color: #4a4a4a;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff1515+0,fff30f+50,089a00+100,e20000+100 */
+  background: rgb(255,21,21); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(255,21,21,1) 0%, rgba(255,243,15,1) 50%, rgba(8,154,0,1) 100%, rgba(226,0,0,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(255,21,21,1) 0%,rgba(255,243,15,1) 50%,rgba(8,154,0,1) 100%,rgba(226,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(255,21,21,1) 0%,rgba(255,243,15,1) 50%,rgba(8,154,0,1) 100%,rgba(226,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1515', endColorstr='#e20000',GradientType=1 ); /* IE6-9 */
 }
+
 
 .btn-success {
   background: #00e195;
@@ -953,17 +954,24 @@ Components
 .btn-danger:hover,
 .btn-danger:active,
 .btn-danger:focus {
-  background: #282e3c;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff1515+0,fff30f+50,089a00+100,e20000+100 */
+  background: rgb(255,21,21); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(255,21,21,1) 0%, rgba(255,243,15,1) 50%, rgba(8,154,0,1) 100%, rgba(226,0,0,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(255,21,21,1) 0%,rgba(255,243,15,1) 50%,rgba(8,154,0,1) 100%,rgba(226,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(255,21,21,1) 0%,rgba(255,243,15,1) 50%,rgba(8,154,0,1) 100%,rgba(226,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1515', endColorstr='#e20000',GradientType=1 ); /* IE6-9 */
   color: #ffffff;
 }
 
 .form-control {
   box-shadow: none !important;
   border: 2px solid #ccc;
+  color: black;
 }
 .form-control:hover, .form-control:focus, .form-control:active {
   outline: none;
   box-shadow: none !important;
+  border-color: #d24805;
 }
 
 /* Features*/
@@ -1252,7 +1260,7 @@ Components
   }
 }
 #fh5co-newsletter .fh5co-uppercase-heading-sm {
-  color: rgba(0, 0, 0, 0.4);
+  color: white;
 }
 
 #fh5co-footer {
